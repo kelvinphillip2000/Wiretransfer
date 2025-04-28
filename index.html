@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wire Transfer Receipt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wire Transfer Receipt Generator</h1>
+        <p class="warning">⚠️ For educational/testing use only. Do not use to deceive or scam.</p>
+        <div class="input-section">
+            <label for="sender-name">Sender Name:</label>
+            <input type="text" id="sender-name" placeholder="e.g., Jane Smith">
+
+            <label for="sender-bank">Sender Bank:</label>
+            <input type="text" id="sender-bank" placeholder="e.g., Bank of America">
+
+            <label for="sender-routing">Sender Routing Number:</label>
+            <input type="text" id="sender-routing" placeholder="e.g., 123456789">
+
+            <label for="recipient-name">Recipient Name:</label>
+            <input type="text" id="recipient-name" placeholder="e.g., John Doe">
+
+            <label for="recipient-bank">Recipient Bank:</label>
+            <input type="text" id="recipient-bank" placeholder="e.g., Wells Fargo">
+
+            <label for="recipient-routing">Recipient Routing Number:</label>
+            <input type="text" id="recipient-routing" placeholder="e.g., 987654321">
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" placeholder="e.g., $5,000.00">
+
+            <label for="date">Date:</label>
+            <input type="text" id="date" placeholder="e.g., 2025-04-29">
+
+            <label for="reference-number">Reference Number:</label>
+            <input type="text" id="reference-number" placeholder="e.g., WTX123456789">
+
+            <button onclick="generateScreenshot()">Generate & Download Screenshot</button>
+        </div>
+        <div class="receipt" id="receipt">
+            <div class="receipt-header">
+                <h2>Wire Transfer Confirmation</h2>
+                <p>Global Bank Services</p>
+            </div>
+            <div class="receipt-content">
+                <h3>Transaction Details</h3>
+                <p><strong>Sender Name:</strong> <span id="receipt-sender-name">Jane Smith</span></p>
+                <p><strong>Sender Bank:</strong> <span id="receipt-sender-bank">Bank of America</span></p>
+                <p><strong>Sender Routing Number:</strong> <span id="receipt-sender-routing">123456789</span></p>
+                <p><strong>Recipient Name:</strong> <span id="receipt-recipient-name">John Doe</span></p>
+                <p><strong>Recipient Bank:</strong> <span id="receipt-recipient-bank">Wells Fargo</span></p>
+                <p><strong>Recipient Routing Number:</strong> <span id="receipt-recipient-routing">987654321</span></p>
+                <p><strong>Amount:</strong> <span id="receipt-amount">$5,000.00</span></p>
+                <p><strong>Date:</strong> <span id="receipt-date">2025-04-29</span></p>
+                <p><strong>Reference Number:</strong> <span id="receipt-reference-number">WTX123456789</span></p>
+                <p class="status">Status: Processed</p>
+            </div>
+            <div class="receipt-footer">
+                <p>Thank you for banking with us.</p>
+                <p>Contact: support@globalbankservices.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
