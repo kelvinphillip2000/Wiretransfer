@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #003087;
+    font-size: 24px;
+}
+
+.warning {
+    color: #ff4444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #003087;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #002060;
+}
+
+.receipt {
+    background: #fff;
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.receipt-header {
+    background: #003087;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.receipt-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.receipt-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.receipt-content {
+    padding: 20px;
+}
+
+.receipt-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 15px;
+}
+
+.receipt-content p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.receipt-content p strong {
+    color: #000;
+}
+
+.status {
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.receipt-footer {
+    background: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.receipt-footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .receipt {
+        width: 90%;
+    }
+}
